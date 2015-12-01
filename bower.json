@@ -1,0 +1,21 @@
+{
+  "name": "angular-snow",
+  "homepage": "https://github.com/felixroos/angular-snow",
+  "authors": [
+    "Felix Roos <roos@entrecode.de>"
+  ],
+  "description": "Let it snow! Use ng-snow to apply fancy JS snow to your elements!",
+  "main": "angular-snow.js",
+  "moduleType": [],
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
