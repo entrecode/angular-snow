@@ -2,7 +2,7 @@
     background: none;
     font-family: Androgyne;
     background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
-
+    pointer-events: none;
     padding: 0px 20px;
     background-clip: content-box;
     display: block;
