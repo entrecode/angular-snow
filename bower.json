@@ -1,5 +1,6 @@
 {
   "name": "angular-snow",
+  "version": "0.2",
   "homepage": "https://github.com/felixroos/angular-snow",
   "authors": [
     "Felix Roos <roos@entrecode.de>"

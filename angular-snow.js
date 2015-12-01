@@ -1,11 +1,8 @@
 /**
  * Created by felix on 01.12.15.
  */
-/**
- * Created by felix on 01.12.15.
- */
 'use strict';
-angular.module('angular-snow', []).directive('ngSnow', function($timeout) {
+angular.module('angular-snow', []).directive('ngSnow', function() {
   return {
     scope:      {
       ngSnow:      '=',
