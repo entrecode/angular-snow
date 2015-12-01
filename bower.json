@@ -5,7 +5,10 @@
     "Felix Roos <roos@entrecode.de>"
   ],
   "description": "Let it snow! Use ng-snow to apply fancy JS snow to your elements!",
-  "main": "angular-snow.js",
+  "main": [
+    "angular-snow.js",
+    "angular-snow.css"
+  ],
   "moduleType": [],
   "keywords": [
     "angular"
