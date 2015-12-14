@@ -200,7 +200,6 @@ angular.module('angular-snow', []).directive('ngSnow', function() {
   return {
     scope:      {
       flake:         '=',
-      bgColor:       '@',
       mouseControls: '=',
       gui:           '=',
       flakeCount:    '=',
@@ -217,15 +216,6 @@ angular.module('angular-snow', []).directive('ngSnow', function() {
       scope.mouseControls = scope.mouseControls || false;
       scope.flakeCount = scope.flakeCount || 2000;
       scope.scale = scope.scale || 4.0;
-
-      /*window.onload = function() {
-       init(el, scope.flake, scope.flakeCount, scope.mouseControls, scope.gui, scope.scale);
-       animate();
-       };*/
-      /*scope.$watch('flake', function(flake) {
-       console.debug('changed flake');
-       init(el, scope.flake, scope.flakeCount, scope.mouseControls, scope.gui, scope.scale);
-       });*/
 
       scope.$watchGroup([
         'mouseControls',
