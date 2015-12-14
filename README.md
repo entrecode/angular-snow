@@ -1,10 +1,10 @@
 # angular-snow
 Let it snow! Use ng-snow to apply fancy JS snow to your elements:
 
-![Angular Snow Demo](angular-snow.gif)
+![Angular Snow Demo](angular-snow-demo.gif)
 
 ```html
-<div ng-snow="true"></div>
+<ng-snow></div>
 ```
 
 ##Installation
@@ -27,7 +27,7 @@ bower install angular-snow --save
 You can replace the snow by a custom image via the *custom-image* parameter. For Example:
  
 ```html
-<div ng-snow="true" custom-image="http://a.deviantart.net/avatars/g/r/grumpy-cat-plzz.png"></div>
+<ng-snow flake="grumpy-cat.png"></div>
 ```
 
 ![Angular Snow Demo](angular-snow-custom.gif)
