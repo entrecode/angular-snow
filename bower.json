@@ -7,8 +7,7 @@
   ],
   "description": "Let it snow! Use ng-snow to apply fancy JS snow to your elements!",
   "main": [
-    "angular-snow.js",
-    "angular-snow.css"
+    "angular-snow.js"
   ],
   "moduleType": [],
   "keywords": [
@@ -23,6 +22,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.4.8"
+    "angular": "~1.4.8",
+    "three.js": "~0.73.0"
   }
 }
