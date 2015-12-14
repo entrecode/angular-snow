@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Angular Snow Demo</title>
-  <!-- angular -->
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/three.js/three.js" type="text/javascript"></script>
-  <script src="bower_components/dat.gui/dat.gui.js" type="text/javascript"></script>
-  <!-- angular-snow dependencies -->
-  <script src="angular-snow.js" type="text/javascript"></script>
-  <script>
-    angular.module('angular-snow-demo', ['angular-snow']).controller(function() {
-      console.debug('angular snow demo controller');
-    })
-  </script>
+    <meta charset="UTF-8">
+    <title>Angular Snow Demo</title>
+    <!-- angular -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/three.js/three.js" type="text/javascript"></script>
+    <script src="bower_components/dat.gui/dat.gui.js" type="text/javascript"></script>
+    <!-- angular-snow dependencies -->
+    <script src="angular-snow.js" type="text/javascript"></script>
+    <script>
+        angular.module('angular-snow-demo', ['angular-snow']);
+    </script>
 </head>
-<body ng-app="angular-snow-demo" style="color:#FFFFFF;background:#000"> <!--  style="background:#000;color:#FFF" -->
-<div ng-snow="true" mouse-controls="false" flake-count="10000" scale="5"></div> <!-- flake="grumpy-cat.png"  -->
+<body ng-app="angular-snow-demo" style="background:#000;color:#FFF"> <!--  style="background:#000;color:#FFF" -->
+<ng-snow flake="flake" mouse-controls="true" gui="true"></ng-snow> <!-- flake="grumpy-cat.png"  -->
 <h1>Angular Snow Demo</h1>
-<p>HLALHLSHIALI</p>
 
+<p>Welcome to the angular-snow Demo! Choose your favorite Flake:</p>
+<a ng-click="flake='flake.png'">
+    <img src="flake.png" width="50px">
+</a>
+<a ng-click="flake='ec_flake.png'">
+    <img src="ec_flake.png" width="50px">
+</a>
+<a ng-click="flake='grumpy-cat.png'">
+    <img src="grumpy-cat.png" width="50px">
+</a>
+<a ng-click="flake='nyan-cat.png'">
+    <img src="nyan-cat.png" width="50px">
+</a>
+<a ng-click="flake='mushroom.png'">
+    <img src="mushroom.png" width="50px">
+</a>
+<a ng-click="flake='flappy-bird.png'">
+  <img src="flappy-bird.png" width="50px">
+</a>
+<a ng-click="flake='astronaut.png'">
+  <img src="astronaut.png" height="50px">
+</a>
 </body>
 </html>
