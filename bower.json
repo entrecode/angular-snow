@@ -23,6 +23,7 @@
   ],
   "dependencies": {
     "angular": "~1.4.8",
-    "three.js": "~0.73.0"
+    "three.js": "~0.73.0",
+    "dat.gui": "*"
   }
 }
