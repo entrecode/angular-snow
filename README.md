@@ -18,8 +18,6 @@ bower install angular-snow --save
 **2. Add Dependencies to your html:**:
 
 ```html
-<!-- angular-snow dependencies -->
-<link href="bower_components/angular-snow/angular-snow.css" rel="stylesheet" type="text/css"/>
 <script src="bower_components/angular-snow/angular-snow.js" type="text/javascript"></script>
 ```
 
@@ -52,5 +50,8 @@ Scales each particle, defaults to 4.0:
 ```html
 <ng-snow scale="10"></div>
 ```
+
+#Demo
+After Installing, run demo.html on your server to see it in action!
 
 Credits go out to: [this codepen](http://codepen.io/NickyCDK/pen/AIonk) and [this post](http://soledadpenades.com/articles/three-js-tutorials/rendering-snow-with-shaders/)
