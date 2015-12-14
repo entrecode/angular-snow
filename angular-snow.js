@@ -6,7 +6,7 @@ angular.module('angular-snow', []).directive('ngSnow', function() {
 
   var renderer, scene, camera, cameraRadius = 50.0, cameraTarget, cameraX = 0, cameraY = 0, cameraZ = cameraRadius, particleSystem, particleSystemHeight = 100.0, clock, controls, parameters, onParametersUpdate, texture;
 
-  function init(el, flake, flakeCount, bgColor, mouseControls, scale) {
+  function init(el, flake, flakeCount, mouseControls, scale) {
 
     renderer = new THREE.WebGLRenderer({alpha: true});
 
@@ -107,7 +107,6 @@ angular.module('angular-snow', []).directive('ngSnow', function() {
     renderer.domElement.style.position = 'absolute';
     renderer.domElement.style.top = '0';
     renderer.domElement.style.left = '0';
-    renderer.domElement.style.background = bgColor || '#000';
     renderer.domElement.style.zIndex = '-1';
     //el.append(renderer.domElement);
     document.body.appendChild(renderer.domElement);
@@ -204,13 +203,13 @@ angular.module('angular-snow', []).directive('ngSnow', function() {
       scope.scale = scope.scale || 4.0;
 
       window.onload = function() {
-        init(el, scope.flake, scope.flakeCount, scope.bgColor, scope.mouseControls, scope.scale);
+        init(el, scope.flake, scope.flakeCount, scope.mouseControls, scope.scale);
         animate();
-      };
+      };/*
 
-      scope.$watchGroup(['flake', 'bgColor', 'mouseControls', 'flakeCount', 'scale'], function(params) {
+      scope.$watchGroup(['flake', 'mouseControls', 'flakeCount', 'scale'], function(params) {
         console.debug(params);
-      });
+      });*/
     }
   };
 });
