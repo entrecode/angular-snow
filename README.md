@@ -4,7 +4,7 @@ Let it snow! Use ng-snow to apply fancy JS snow to your elements:
 ![Angular Snow Demo](angular-snow-demo.gif)
 
 ```html
-<ng-snow></div>
+<ng-snow></ng-snow>
 ```
 
 ##Installation
